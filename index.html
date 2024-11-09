@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, intial-scale=1">
+    <meta name="author" content="Isaac Nunez">
+    <meta name="description" content="Social Media">
+    <meta name="keywords" content="html, css, javascript">
+    <title>Social Media Platform</title>
+    <link rel="icon" href="./src/img/icon-favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+    <link rel="stylesheet" href="./assets/css/style.css" media="all">
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+
+    <header class="header">
+        <h1 class="logo">Fakebook</h1>
+        <nav class="nav-links">
+            <a href="#">Friends</a>
+            <a href="#">Pages</a>
+            <a href="#">Groups</a>
+            <a href="#">My ads</a>
+            <a href="#">Settings</a>
+        </nav>
+        <img src="./assets/img/my image.jpg" alt="Profile" class="profile-icon" onclick="openModal()">
+    </header>
+
+    <div class="post-container">
+        <form class="post-form">
+            <textarea class="post-textarea" placeholder="What's new, Isaac?"></textarea>
+            <div class="special-section">
+                <div class="file-section">
+                    <label class="custom-input">
+                    <i class="fa fa-image"></i>
+                    <input type="file" class="file-input" accept="image/*">
+                    </label>
+                    <span class="file-name"></span>
+                </div>
+                <button type="submit" class="post-button">Post</button>
+            </div>
+            <div class="error-message"></div>
+            
+        </form>
+    </div>
+
+    <section class="posts-section"></section>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>User Info</h2>
+            <p class="user-info"></p>
+        </div>
+    </div>
+
+</body>
+</html> 
